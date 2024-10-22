@@ -24,6 +24,26 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Esto es para los cuadros-->
+    <style>
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+            padding: 20px;
+            border: 2px solid #dee2e6;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+    </style>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -137,7 +157,7 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Education</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Education and Experience</h1>
             </div>
             <div class="row align-items-center">
@@ -258,13 +278,13 @@
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Programming</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Modeling</li>
+                        <!-- <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Modeling</li> -->
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Social</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first cuadro">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/voto-1.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -287,7 +307,7 @@
                         <h4 class="linea"><a href="https://github.com/CarlosMartinz/Programacion-II.git" target="_blank">Voting App Link</h4></a>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <!-- <div class="col-lg-4 col-md-6 mb-4 portfolio-item second cuadro">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/casa-2.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -301,8 +321,8 @@
                         <p>It consists of a 3D house using the Blender program, where apart from modeling 
                             the house, materials (colors), accessories (snow), (trees), lights, etc. are also applied.</p>
                     </span>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                </div> -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third cuadro">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/trabajo1.jpeg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -324,7 +344,7 @@
                             is the visits to the Asilo de Adultos Mayores in Usuluán.</p>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first cuadro">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/travel1.jpeg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -349,7 +369,7 @@
                         <h4 class="linea"><a href="https://github.com/CarlosMartinz/TravelAccidentt.git" target="_blank">Travel Accident Link</h4></a>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <!-- <div class="col-lg-4 col-md-6 mb-4 portfolio-item second cuadro">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/casa-1.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -363,8 +383,8 @@
                         <p>It consists of animating a character in 3D using the blender program, 
                             and a website that provides characters and animations on them.</p>
                     </span>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                </div> -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third cuadro">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/social1.jpeg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -467,8 +487,8 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">REVIEWS</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Testimonials</h1>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+            <div class="row portfolio-container">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Alcir.en.pdf" target="_blank">
@@ -483,7 +503,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Oscar.en.pdf" target="_blank">
@@ -498,7 +518,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Cordero.en.pdf" target="_blank">
@@ -513,7 +533,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Marvin.en.pdf" target="_blank">
@@ -528,7 +548,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Timotea.en.pdf" target="_blank">

@@ -24,6 +24,26 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Esto es para los cuadro-->
+    <style>
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+            padding: 20px;
+            border: 2px solid #dee2e6;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+    </style>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -45,7 +65,7 @@
                 <a href="#diploma" class="nav-item nav-link">DIPLOMAS</a>
                 <a href="#testimonial" class="nav-item nav-link">RESEÑAS</a>
                 <a href="#contact" class="nav-item nav-link">CONTACTO</a>
-                <a href="ingles.html" class="nav-item nav-link">ENGLISH</a>
+                <a href="index copy.html" class="nav-item nav-link">ENGLISH</a>
             </div>
             <!-- <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a> -->
         </div>
@@ -139,7 +159,7 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Educación</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Educación y Experiencia</h1>
             </div>
             <div class="row align-items-center">
@@ -179,7 +199,7 @@
     <div class="container-fluid py-5" id="skill">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Habilidades</h1>
                 <h1 class="position-absolute text-uppercase text-primary">HABILIDADES</h1>
             </div>
             <div class="row align-items-center">
@@ -259,13 +279,13 @@
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">Todos</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Programación</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Modelaje</li>
+                        <!-- <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Modelaje</li> -->
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Social</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-4 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/voto-1.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -289,7 +309,7 @@
                         <h4 class="linea"><a href="https://github.com/CarlosMartinz/Programacion-II.git" target="_blank">Enlace de App de votaciones</h4></a>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <!-- <div class="col-lg-4 col-md-4 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/casa-2.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -304,8 +324,8 @@
                             donde a parte de modelar la casa también se le aplico materiales (colores), complementos (nieve), 
                             (arboles), luces, etc.</p>
                     </span>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                </div> -->
+                <div class="col-lg-4 col-md-4 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/trabajo1.jpeg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -327,7 +347,7 @@
                             las visitas al Asilo de Adultos Mayores en Usuluán.</p>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-4 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/travel1.jpeg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -353,7 +373,7 @@
                     </span>
                     </span>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <!-- <div class="col-lg-4 col-md-4 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/casa-1.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -367,8 +387,8 @@
                         <p>Consiste en animar un personaje en 3D haciendo uso del programa de blender, 
                             y de una web que proporciona personajes y animaciones en ellos.</p>
                     </span>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                </div> -->
+                <div class="col-lg-4 col-md-4 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/social1.jpeg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -472,8 +492,8 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">RESEÑAS</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Testimonios</h1>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+            <div class="row portfolio-container">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Alcir Quintanilla.pdf" target="_blank">
@@ -488,7 +508,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Oscar Torres.pdf" target="_blank">
@@ -503,7 +523,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Rene Cordero.pdf" target="_blank">
@@ -518,7 +538,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Marvin Parada.pdf" target="_blank">
@@ -533,7 +553,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 m-auto portfolio-item">
                     <div class="blog-box wow animate fadeInUp" data-wow-duration="600ms" data-wow-delay="0s">
                         <div class="blog-img">
                             <a href="./docs/Timotea.pdf" target="_blank">

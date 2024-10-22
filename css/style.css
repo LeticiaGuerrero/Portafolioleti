@@ -535,7 +535,7 @@ mark,
 }
 
 .imagen:hover {
-  content: url('/img/logo.jpeg');
+  content: url('/img/marca.jpg');
 }
 
 .img-fluid {
